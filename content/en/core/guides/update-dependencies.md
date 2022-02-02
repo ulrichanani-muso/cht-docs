@@ -26,7 +26,7 @@ Then for each folder go through these steps.
 
 1. `npm ci` - update your local node_modules to match expected
 2. `npm outdated` - report on any dependencies which aren't at the latest
-3. `npm install --save[-dev] package@version` - install the latest version (be careful and read the release notes if the new version is a major change from the current)
+3. `npm install --save --also=dev package@version` - install the latest version (be careful and read the release notes if the new version is a major change from the current)
 4. `npm dedupe` - remove duplicated dependencies
 5. `npm audit fix` - automatically fix any nested dependencies with vulnerabilities
 6. `npm audit` - get a report on any remaining vulnerabilities and manually scan it to see if there's anything else you can do
