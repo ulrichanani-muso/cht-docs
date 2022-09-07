@@ -67,7 +67,7 @@ A VMMC client who responds with a potential adverse effect triggers a task for a
 Patients registered on CHT can also initiate the bidirectional messaging with a Site Nurse by messaging a central number in this case a short code. VMMC patients can screen themselves and report any danger signs or request for help from health care providers and chat with healthcare workers via SMS. For this workflow, the logic can be preconfigured to support health triage and clinical referrals. Using the messaging functionality on CHT, health care providers based at the facility can view, manage and respond to incoming texts from VMMC clients.
 
 
-## More scenarios where direct-to-patient messaging can be used to support patient care
+## More scenarios where direct-to-patient messaging can be used to support care coordination.
 
 ### 1. Facility appointment reminders workflow
 Appointment reminders can be configured on CHT so that household members and patients can receive facility appointment reminders. Facility appointment reminders are configured as per the recommended health guidelines for specific use cases. For example, immunization clinic visit reminders for under 5 children can be configured as per the recommended immunization schedule. The clinic visit appointment reminders can be configured to automatically stop once the period the child is expected to have completed the immunization schedule ends.
