@@ -3,26 +3,34 @@ title: "CHT Core Developer Setup"
 linkTitle: "CHT Core Developer Setup"
 weight: 40
 description: >
-  Getting your local machine ready to to development work on CHT Core.
+  Getting your local machine ready to do development work on CHT Core.
 ---
 
-{{% alert title="Note" %}} This guide assumes you are a CHT Core developer wanting to run the CHT Core from source code to make commits to the [public GitHub repository](https://github.com/medic/cht-core). To set up a your environment for developing apps, see the [app guide]({{< relref "apps/guides/hosting/app-developer.md" >}}).
+{{% alert title="Note" %}} This guide assumes you are a CHT Core developer wanting to run the CHT Core from source code to make commits to the [public GitHub repository](https://github.com/medic/cht-core). To set up your environment for developing apps, see the [app guide]({{< relref "apps/guides/hosting/app-developer.md" >}}).
 
 To deploy the CHT in production, see either [AWS hosting]({{< relref "apps/guides/hosting/self-hosting.md" >}}) or [Self hosting]({{< relref "apps/guides/hosting/ec2-setup-guide.md" >}}){{% /alert %}}
 
 
 ## The Happy Path Installation
 
-This CHT Core developer guide will have you install NodeJS, npm, Grunt and CouchDB (via Docker) on your local workstation. These instructions should work verbatim on Ubuntu 18-22 (see [Ubuntu 18 note](#ubuntu-1804)), but will need tweaks for MacOS (via `brew`) or Windows (via WSL2).
+This CHT Core developer guide will have you install NodeJS, npm, Grunt and CouchDB (via Docker) on your local workstation. 
 
 ### Install NodeJS, npm, grunt and Docker
 
-First, update your current Ubuntu packages and install some supporting tools via `apt`:
+First, update your current packages and install some supporting tools:
 
-```shell
+{{< tabpane persistLang=false lang=shell >}}
+{{< tab header="Linux (Ubuntu)" >}}
 sudo apt update && sudo apt -y dist-upgrade
 sudo apt -y install xsltproc curl uidmap jq python2 git make g++
-```
+{{< /tab >}}
+{{< tab header="MacOS" >}}
+# TODO Add brew commands
+{{< /tab >}}
+{{< tab header="Windows (WSL2)" >}}
+# TODO Add windows commands
+{{< /tab >}}
+{{< /tabpane >}}
 
 Then install `nvm`, add it to your path and install NodeJS 16:
 
